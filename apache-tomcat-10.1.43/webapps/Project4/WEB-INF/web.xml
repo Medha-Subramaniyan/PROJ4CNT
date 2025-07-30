@@ -47,6 +47,16 @@
         <url-pattern>/AccountantServlet</url-pattern>
     </servlet-mapping>
 
+    <!-- Test Driver Servlet -->
+    <servlet>
+        <servlet-name>TestDriverServlet</servlet-name>
+        <servlet-class>com.project4.TestDriverServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TestDriverServlet</servlet-name>
+        <url-pattern>/TestDriverServlet</url-pattern>
+    </servlet-mapping>
+
     <!-- Welcome File -->
     <welcome-file-list>
         <welcome-file>authentication.html</welcome-file>

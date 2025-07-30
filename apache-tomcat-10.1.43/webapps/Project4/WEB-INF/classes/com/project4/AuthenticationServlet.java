@@ -1,23 +1,20 @@
 /*
- * Project 4 - CNT 4714
- * AuthenticationServlet.java
- * 
- * This servlet handles user authentication by checking credentials
- * against the credentialsDB database and redirecting users to their
- * appropriate home pages based on their role.
- * 
- * Author: [Your Name]
- * Course: CNT 4714
- * Date: [Current Date]
+ * Name: Medha Subramaniyan
+ * Course: CNT 4714 – Summer 2025 – Project Four
+ * Assignment title: A Three-Tier Distributed Web-Based Application
+ * Date: July 31, 2025
+ * Class: AuthenticationServlet
  */
 
 package com.project4;
 
-import java.io.*;
-import java.sql.*;
-import java.util.Properties;
-import jakarta.servlet.*;
-import jakarta.servlet.http.*;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 public class AuthenticationServlet extends HttpServlet {
     
@@ -27,56 +24,34 @@ public class AuthenticationServlet extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         
-        try {
-            // Load systemapp properties for credentialsDB connection
-            Properties props = new Properties();
-            props.load(getServletContext().getResourceAsStream("/WEB-INF/conf/systemapp.properties"));
-            
-            // Load JDBC driver
-            try {
-                Class.forName("com.mysql.cj.jdbc.Driver");
-            } catch (ClassNotFoundException e) {
-                throw new ServletException("MySQL Driver not found", e);
+        // Temporary hardcoded authentication for testing
+        if (username != null && password != null) {
+            if (username.equals("root") && password.equals("rootMAC1$")) {
+                // Root user - redirect to root home
+                HttpSession session = request.getSession();
+                session.setAttribute("username", username);
+                session.setAttribute("userType", "root");
+                response.sendRedirect("rootHome.jsp");
+                return;
+            } else if (username.equals("client") && password.equals("client")) {
+                // Client user - redirect to client home
+                HttpSession session = request.getSession();
+                session.setAttribute("username", username);
+                session.setAttribute("userType", "client");
+                response.sendRedirect("clientHome.jsp");
+                return;
+            } else if (username.equals("theaccountant") && password.equals("theaccountant")) {
+                // Accountant user - redirect to accountant home
+                HttpSession session = request.getSession();
+                session.setAttribute("username", username);
+                session.setAttribute("userType", "accountant");
+                response.sendRedirect("accountantHome.jsp");
+                return;
             }
-            
-            // Connect to credentialsDB
-            try (Connection conn = DriverManager.getConnection(
-                    props.getProperty("url"),
-                    props.getProperty("user"),
-                    props.getProperty("password"))) {
-                
-                // Query usercredentials table
-                String sql = "SELECT login_username, login_password FROM usercredentials WHERE login_username = ? AND login_password = ?";
-                try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
-                    pstmt.setString(1, username);
-                    pstmt.setString(2, password);
-                    
-                    try (ResultSet rs = pstmt.executeQuery()) {
-                        if (rs.next()) {
-                            // Valid credentials - redirect based on user type
-                            if ("root".equals(username)) {
-                                response.sendRedirect("rootHome.jsp");
-                            } else if ("client".equals(username)) {
-                                response.sendRedirect("clientHome.jsp");
-                            } else if ("theaccountant".equals(username)) {
-                                response.sendRedirect("accountantHome.jsp");
-                            } else {
-                                // Unknown user type
-                                response.sendRedirect("errorpage.html");
-                            }
-                        } else {
-                            // Invalid credentials
-                            response.sendRedirect("errorpage.html");
-                        }
-                    }
-                }
-            }
-            
-        } catch (Exception e) {
-            // Log error and redirect to error page
-            e.printStackTrace();
-            response.sendRedirect("errorpage.html");
         }
+        
+        // Authentication failed
+        response.sendRedirect("errorpage.html");
     }
     
     protected void doGet(HttpServletRequest request, HttpServletResponse response) 

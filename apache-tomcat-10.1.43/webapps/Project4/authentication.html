@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 4 - Authentication</title>
     <style>
         body {
@@ -15,7 +17,7 @@
             background: white;
             padding: 30px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         h1 {
             text-align: center;
@@ -28,8 +30,8 @@
         label {
             display: block;
             margin-bottom: 5px;
-            font-weight: bold;
             color: #555;
+            font-weight: bold;
         }
         input[type="text"], input[type="password"] {
             width: 100%;
@@ -51,11 +53,22 @@
         button:hover {
             background-color: #0056b3;
         }
+        .test-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .test-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .test-link a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Project 4 - Login</h1>
+        <h1>Project 4 - Authentication</h1>
         <form action="AuthenticationServlet" method="post">
             <div class="form-group">
                 <label for="username">Username:</label>
@@ -67,6 +80,9 @@
             </div>
             <button type="submit">Login</button>
         </form>
+        <div class="test-link">
+            <a href="TestDriverServlet">Test MySQL Driver</a>
+        </div>
     </div>
 </body>
 </html> 

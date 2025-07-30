@@ -1,0 +1,930 @@
+29-Jul-2025 17:57:08.432 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.43
+29-Jul-2025 17:57:08.435 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 1 2025 21:30:20 UTC
+29-Jul-2025 17:57:08.435 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.43.0
+29-Jul-2025 17:57:08.435 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+29-Jul-2025 17:57:08.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            15.0
+29-Jul-2025 17:57:08.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+29-Jul-2025 17:57:08.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-24.jdk/Contents/Home
+29-Jul-2025 17:57:08.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.1+9-30
+29-Jul-2025 17:57:08.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+29-Jul-2025 17:57:08.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 17:57:08.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 17:57:08.451 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/conf/logging.properties
+29-Jul-2025 17:57:08.451 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+29-Jul-2025 17:57:08.451 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+29-Jul-2025 17:57:08.451 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+29-Jul-2025 17:57:08.451 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+29-Jul-2025 17:57:08.451 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+29-Jul-2025 17:57:08.451 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+29-Jul-2025 17:57:08.451 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+29-Jul-2025 17:57:08.451 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+29-Jul-2025 17:57:08.451 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+29-Jul-2025 17:57:08.452 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+29-Jul-2025 17:57:08.452 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+29-Jul-2025 17:57:08.452 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 17:57:08.452 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 17:57:08.452 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/temp
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/lib/tomcat-jni.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+29-Jul-2025 17:57:08.469 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/medhasubramaniyan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+29-Jul-2025 17:57:08.713 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 17:57:08.731 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1075)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:522)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:957)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:712)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:735)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:511)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:335)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:297)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:266)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:221)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1399)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1412)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:633)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:82)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1073)
+		... 11 more
+29-Jul-2025 17:57:08.732 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [512] milliseconds
+29-Jul-2025 17:57:08.762 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+29-Jul-2025 17:57:08.762 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.43]
+29-Jul-2025 17:57:08.767 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/docs]
+29-Jul-2025 17:57:09.032 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/docs] has finished in [264] ms
+29-Jul-2025 17:57:09.033 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/manager]
+29-Jul-2025 17:57:09.079 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/manager] has finished in [45] ms
+29-Jul-2025 17:57:09.079 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/examples]
+29-Jul-2025 17:57:09.806 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/examples] has finished in [726] ms
+29-Jul-2025 17:57:09.806 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/ROOT]
+29-Jul-2025 17:57:09.837 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/ROOT] has finished in [31] ms
+29-Jul-2025 17:57:09.837 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/Project4]
+29-Jul-2025 17:57:10.073 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 17:57:10.080 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/Project4] has finished in [243] ms
+29-Jul-2025 17:57:10.081 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/host-manager]
+29-Jul-2025 17:57:10.104 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/host-manager] has finished in [23] ms
+29-Jul-2025 17:57:10.108 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1374] milliseconds
+29-Jul-2025 17:57:10.114 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:511)
+		at java.base/sun.nio.ch.Net.bind(Net.java:500)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:630)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:326)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:222)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:533)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:851)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:799)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+29-Jul-2025 17:57:10.114 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 17:57:10.114 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+29-Jul-2025 17:57:10.132 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 17:57:10.133 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 17:57:21.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.43
+29-Jul-2025 17:57:21.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 1 2025 21:30:20 UTC
+29-Jul-2025 17:57:21.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.43.0
+29-Jul-2025 17:57:21.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+29-Jul-2025 17:57:21.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            15.0
+29-Jul-2025 17:57:21.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+29-Jul-2025 17:57:21.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-24.jdk/Contents/Home
+29-Jul-2025 17:57:21.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.1+9-30
+29-Jul-2025 17:57:21.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+29-Jul-2025 17:57:21.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 17:57:21.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 17:57:21.218 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/conf/logging.properties
+29-Jul-2025 17:57:21.218 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+29-Jul-2025 17:57:21.218 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+29-Jul-2025 17:57:21.218 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+29-Jul-2025 17:57:21.218 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+29-Jul-2025 17:57:21.219 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+29-Jul-2025 17:57:21.219 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+29-Jul-2025 17:57:21.219 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+29-Jul-2025 17:57:21.219 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+29-Jul-2025 17:57:21.219 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+29-Jul-2025 17:57:21.219 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+29-Jul-2025 17:57:21.219 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+29-Jul-2025 17:57:21.219 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 17:57:21.219 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 17:57:21.219 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/temp
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/lib/tomcat-jni.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+29-Jul-2025 17:57:21.232 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/medhasubramaniyan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+29-Jul-2025 17:57:21.464 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 17:57:21.486 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [555] milliseconds
+29-Jul-2025 17:57:21.514 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+29-Jul-2025 17:57:21.514 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.43]
+29-Jul-2025 17:57:21.521 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/docs]
+29-Jul-2025 17:57:22.022 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/docs] has finished in [500] ms
+29-Jul-2025 17:57:22.023 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/manager]
+29-Jul-2025 17:57:22.103 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/manager] has finished in [80] ms
+29-Jul-2025 17:57:22.104 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/examples]
+29-Jul-2025 17:57:22.951 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/examples] has finished in [847] ms
+29-Jul-2025 17:57:22.952 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/ROOT]
+29-Jul-2025 17:57:22.974 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/ROOT] has finished in [21] ms
+29-Jul-2025 17:57:22.974 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/Project4]
+29-Jul-2025 17:57:23.298 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 17:57:23.311 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/Project4] has finished in [337] ms
+29-Jul-2025 17:57:23.312 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/host-manager]
+29-Jul-2025 17:57:23.341 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/host-manager] has finished in [29] ms
+29-Jul-2025 17:57:23.347 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 17:57:23.377 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1889] milliseconds
+29-Jul-2025 18:02:26.417 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+29-Jul-2025 18:02:26.420 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:02:26.456 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+29-Jul-2025 18:02:26.551 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:02:26.570 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:02:30.143 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.43
+29-Jul-2025 18:02:30.147 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 1 2025 21:30:20 UTC
+29-Jul-2025 18:02:30.147 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.43.0
+29-Jul-2025 18:02:30.147 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+29-Jul-2025 18:02:30.147 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            15.0
+29-Jul-2025 18:02:30.148 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+29-Jul-2025 18:02:30.148 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-24.jdk/Contents/Home
+29-Jul-2025 18:02:30.148 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.1+9-30
+29-Jul-2025 18:02:30.148 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+29-Jul-2025 18:02:30.148 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:02:30.148 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:02:30.168 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/conf/logging.properties
+29-Jul-2025 18:02:30.168 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+29-Jul-2025 18:02:30.168 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+29-Jul-2025 18:02:30.168 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+29-Jul-2025 18:02:30.168 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+29-Jul-2025 18:02:30.169 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+29-Jul-2025 18:02:30.169 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+29-Jul-2025 18:02:30.169 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+29-Jul-2025 18:02:30.169 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+29-Jul-2025 18:02:30.169 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+29-Jul-2025 18:02:30.169 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+29-Jul-2025 18:02:30.169 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+29-Jul-2025 18:02:30.170 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:02:30.170 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:02:30.170 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/temp
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/lib/tomcat-jni.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+29-Jul-2025 18:02:30.194 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/medhasubramaniyan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+29-Jul-2025 18:02:30.536 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:02:30.568 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [805] milliseconds
+29-Jul-2025 18:02:30.629 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+29-Jul-2025 18:02:30.629 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.43]
+29-Jul-2025 18:02:30.644 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/docs]
+29-Jul-2025 18:02:31.131 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/docs] has finished in [486] ms
+29-Jul-2025 18:02:31.131 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/manager]
+29-Jul-2025 18:02:31.164 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/manager] has finished in [33] ms
+29-Jul-2025 18:02:31.165 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/examples]
+29-Jul-2025 18:02:31.351 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/examples] has finished in [185] ms
+29-Jul-2025 18:02:31.351 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/ROOT]
+29-Jul-2025 18:02:31.364 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/ROOT] has finished in [12] ms
+29-Jul-2025 18:02:31.364 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/Project4]
+29-Jul-2025 18:02:31.543 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:02:31.550 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/Project4] has finished in [185] ms
+29-Jul-2025 18:02:31.550 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/host-manager]
+29-Jul-2025 18:02:31.565 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/host-manager] has finished in [14] ms
+29-Jul-2025 18:02:31.568 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:02:31.584 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1011] milliseconds
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+29-Jul-2025 18:11:00.188 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+29-Jul-2025 18:11:00.191 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:11:00.197 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+29-Jul-2025 18:11:00.227 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Project4] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+29-Jul-2025 18:11:00.228 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Project4] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/java.lang.Object.wait0(Native Method)
+ java.base/java.lang.Object.wait(Object.java:389)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:124)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:215)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+ java.base/java.lang.Thread.run(Thread.java:1447)
+29-Jul-2025 18:11:00.236 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:11:00.245 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:11:04.272 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.43
+29-Jul-2025 18:11:04.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 1 2025 21:30:20 UTC
+29-Jul-2025 18:11:04.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.43.0
+29-Jul-2025 18:11:04.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+29-Jul-2025 18:11:04.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            15.0
+29-Jul-2025 18:11:04.275 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+29-Jul-2025 18:11:04.275 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-24.jdk/Contents/Home
+29-Jul-2025 18:11:04.275 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.1+9-30
+29-Jul-2025 18:11:04.275 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+29-Jul-2025 18:11:04.275 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:11:04.275 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:11:04.290 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/conf/logging.properties
+29-Jul-2025 18:11:04.290 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+29-Jul-2025 18:11:04.290 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+29-Jul-2025 18:11:04.290 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+29-Jul-2025 18:11:04.290 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+29-Jul-2025 18:11:04.290 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+29-Jul-2025 18:11:04.290 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+29-Jul-2025 18:11:04.290 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+29-Jul-2025 18:11:04.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+29-Jul-2025 18:11:04.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+29-Jul-2025 18:11:04.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+29-Jul-2025 18:11:04.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+29-Jul-2025 18:11:04.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:11:04.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:11:04.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/temp
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/lib/tomcat-jni.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+29-Jul-2025 18:11:04.301 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/medhasubramaniyan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+29-Jul-2025 18:11:04.579 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:11:04.612 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [522] milliseconds
+29-Jul-2025 18:11:04.654 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+29-Jul-2025 18:11:04.655 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.43]
+29-Jul-2025 18:11:04.662 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/docs]
+29-Jul-2025 18:11:04.955 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/docs] has finished in [292] ms
+29-Jul-2025 18:11:04.955 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/manager]
+29-Jul-2025 18:11:04.980 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/manager] has finished in [25] ms
+29-Jul-2025 18:11:04.981 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/examples]
+29-Jul-2025 18:11:05.180 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/examples] has finished in [199] ms
+29-Jul-2025 18:11:05.180 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/ROOT]
+29-Jul-2025 18:11:05.198 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/ROOT] has finished in [18] ms
+29-Jul-2025 18:11:05.199 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/Project4]
+29-Jul-2025 18:11:05.442 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:11:05.453 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/Project4] has finished in [254] ms
+29-Jul-2025 18:11:05.454 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/host-manager]
+29-Jul-2025 18:11:05.489 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/host-manager] has finished in [34] ms
+29-Jul-2025 18:11:05.494 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:11:05.525 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [911] milliseconds
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+29-Jul-2025 18:11:55.971 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+29-Jul-2025 18:11:55.972 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:11:55.978 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+29-Jul-2025 18:11:56.009 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Project4] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+29-Jul-2025 18:11:56.011 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Project4] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/java.lang.Object.wait0(Native Method)
+ java.base/java.lang.Object.wait(Object.java:389)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:124)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:215)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+ java.base/java.lang.Thread.run(Thread.java:1447)
+29-Jul-2025 18:11:56.023 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:11:56.028 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:11:59.426 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.43
+29-Jul-2025 18:11:59.445 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 1 2025 21:30:20 UTC
+29-Jul-2025 18:11:59.446 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.43.0
+29-Jul-2025 18:11:59.446 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+29-Jul-2025 18:11:59.447 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            15.0
+29-Jul-2025 18:11:59.447 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+29-Jul-2025 18:11:59.448 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-24.jdk/Contents/Home
+29-Jul-2025 18:11:59.449 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.1+9-30
+29-Jul-2025 18:11:59.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+29-Jul-2025 18:11:59.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:11:59.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:11:59.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/conf/logging.properties
+29-Jul-2025 18:11:59.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+29-Jul-2025 18:11:59.461 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+29-Jul-2025 18:11:59.461 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+29-Jul-2025 18:11:59.461 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+29-Jul-2025 18:11:59.461 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+29-Jul-2025 18:11:59.461 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+29-Jul-2025 18:11:59.461 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+29-Jul-2025 18:11:59.461 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+29-Jul-2025 18:11:59.461 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+29-Jul-2025 18:11:59.461 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+29-Jul-2025 18:11:59.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+29-Jul-2025 18:11:59.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:11:59.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:11:59.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/temp
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/lib/tomcat-jni.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+29-Jul-2025 18:11:59.474 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/medhasubramaniyan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+29-Jul-2025 18:11:59.748 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:11:59.780 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [538] milliseconds
+29-Jul-2025 18:11:59.819 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+29-Jul-2025 18:11:59.819 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.43]
+29-Jul-2025 18:11:59.826 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/docs]
+29-Jul-2025 18:12:00.089 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/docs] has finished in [262] ms
+29-Jul-2025 18:12:00.090 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/manager]
+29-Jul-2025 18:12:00.124 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/manager] has finished in [34] ms
+29-Jul-2025 18:12:00.124 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/examples]
+29-Jul-2025 18:12:00.381 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/examples] has finished in [257] ms
+29-Jul-2025 18:12:00.381 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/ROOT]
+29-Jul-2025 18:12:00.400 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/ROOT] has finished in [19] ms
+29-Jul-2025 18:12:00.400 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/Project4]
+29-Jul-2025 18:12:00.622 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:12:00.627 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/Project4] has finished in [226] ms
+29-Jul-2025 18:12:00.627 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/host-manager]
+29-Jul-2025 18:12:00.646 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/host-manager] has finished in [18] ms
+29-Jul-2025 18:12:00.648 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:12:00.666 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [884] milliseconds
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+29-Jul-2025 18:12:26.342 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+29-Jul-2025 18:12:26.343 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:12:26.346 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+29-Jul-2025 18:12:26.365 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Project4] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+29-Jul-2025 18:12:26.366 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Project4] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/java.lang.Object.wait0(Native Method)
+ java.base/java.lang.Object.wait(Object.java:389)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:124)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:215)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+ java.base/java.lang.Thread.run(Thread.java:1447)
+29-Jul-2025 18:12:26.371 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:12:26.383 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:12:30.011 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.43
+29-Jul-2025 18:12:30.014 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 1 2025 21:30:20 UTC
+29-Jul-2025 18:12:30.014 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.43.0
+29-Jul-2025 18:12:30.014 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+29-Jul-2025 18:12:30.014 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            15.0
+29-Jul-2025 18:12:30.015 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+29-Jul-2025 18:12:30.015 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-24.jdk/Contents/Home
+29-Jul-2025 18:12:30.015 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.1+9-30
+29-Jul-2025 18:12:30.015 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+29-Jul-2025 18:12:30.015 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:12:30.016 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:12:30.026 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/conf/logging.properties
+29-Jul-2025 18:12:30.027 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+29-Jul-2025 18:12:30.027 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+29-Jul-2025 18:12:30.027 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+29-Jul-2025 18:12:30.027 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+29-Jul-2025 18:12:30.027 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+29-Jul-2025 18:12:30.027 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+29-Jul-2025 18:12:30.027 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+29-Jul-2025 18:12:30.027 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+29-Jul-2025 18:12:30.028 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+29-Jul-2025 18:12:30.028 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+29-Jul-2025 18:12:30.028 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+29-Jul-2025 18:12:30.028 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:12:30.028 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:12:30.028 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/temp
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/lib/tomcat-jni.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+29-Jul-2025 18:12:30.043 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/medhasubramaniyan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+29-Jul-2025 18:12:30.300 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:12:30.322 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [621] milliseconds
+29-Jul-2025 18:12:30.349 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+29-Jul-2025 18:12:30.349 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.43]
+29-Jul-2025 18:12:30.355 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/docs]
+29-Jul-2025 18:12:30.753 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:12:30.779 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/docs] has finished in [423] ms
+29-Jul-2025 18:12:30.779 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/manager]
+29-Jul-2025 18:12:30.938 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:12:30.943 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/manager] has finished in [164] ms
+29-Jul-2025 18:12:30.943 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/examples]
+29-Jul-2025 18:12:31.606 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:12:31.634 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/examples] has finished in [691] ms
+29-Jul-2025 18:12:31.635 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/ROOT]
+29-Jul-2025 18:12:31.838 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:12:31.840 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/ROOT] has finished in [206] ms
+29-Jul-2025 18:12:31.840 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/Project4]
+29-Jul-2025 18:12:32.042 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:12:32.045 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/Project4] has finished in [205] ms
+29-Jul-2025 18:12:32.046 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/host-manager]
+29-Jul-2025 18:12:32.161 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:12:32.162 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/host-manager] has finished in [117] ms
+29-Jul-2025 18:12:32.165 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:12:32.173 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1850] milliseconds
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+29-Jul-2025 18:13:07.112 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+29-Jul-2025 18:13:07.114 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:13:07.125 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+29-Jul-2025 18:13:07.164 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Project4] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+29-Jul-2025 18:13:07.165 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Project4] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/java.lang.Object.wait0(Native Method)
+ java.base/java.lang.Object.wait(Object.java:389)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:124)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:215)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+ java.base/java.lang.Thread.run(Thread.java:1447)
+29-Jul-2025 18:13:07.177 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:13:07.190 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:13:11.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.43
+29-Jul-2025 18:13:11.612 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 1 2025 21:30:20 UTC
+29-Jul-2025 18:13:11.612 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.43.0
+29-Jul-2025 18:13:11.613 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+29-Jul-2025 18:13:11.613 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            15.0
+29-Jul-2025 18:13:11.613 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+29-Jul-2025 18:13:11.613 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-24.jdk/Contents/Home
+29-Jul-2025 18:13:11.613 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.1+9-30
+29-Jul-2025 18:13:11.613 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+29-Jul-2025 18:13:11.613 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:13:11.613 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:13:11.625 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/conf/logging.properties
+29-Jul-2025 18:13:11.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+29-Jul-2025 18:13:11.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+29-Jul-2025 18:13:11.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+29-Jul-2025 18:13:11.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+29-Jul-2025 18:13:11.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+29-Jul-2025 18:13:11.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+29-Jul-2025 18:13:11.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+29-Jul-2025 18:13:11.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+29-Jul-2025 18:13:11.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+29-Jul-2025 18:13:11.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+29-Jul-2025 18:13:11.627 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+29-Jul-2025 18:13:11.627 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:13:11.627 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:13:11.627 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/temp
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/lib/tomcat-jni.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+29-Jul-2025 18:13:11.637 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/medhasubramaniyan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+29-Jul-2025 18:13:11.886 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:13:11.909 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [498] milliseconds
+29-Jul-2025 18:13:11.941 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+29-Jul-2025 18:13:11.942 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.43]
+29-Jul-2025 18:13:11.948 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/docs]
+29-Jul-2025 18:13:12.405 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:13:12.435 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/docs] has finished in [486] ms
+29-Jul-2025 18:13:12.435 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/manager]
+29-Jul-2025 18:13:12.639 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:13:12.646 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/manager] has finished in [211] ms
+29-Jul-2025 18:13:12.646 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/examples]
+29-Jul-2025 18:13:13.216 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:13:13.232 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/examples] has finished in [586] ms
+29-Jul-2025 18:13:13.233 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/ROOT]
+29-Jul-2025 18:13:13.399 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:13:13.401 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/ROOT] has finished in [168] ms
+29-Jul-2025 18:13:13.401 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/Project4]
+29-Jul-2025 18:13:13.602 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:13:13.606 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/Project4] has finished in [205] ms
+29-Jul-2025 18:13:13.606 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/host-manager]
+29-Jul-2025 18:13:13.722 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:13:13.723 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/host-manager] has finished in [117] ms
+29-Jul-2025 18:13:13.726 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:13:13.734 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1823] milliseconds
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+29-Jul-2025 18:13:56.088 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+29-Jul-2025 18:13:56.089 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:13:56.093 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+29-Jul-2025 18:13:56.114 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Project4] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+29-Jul-2025 18:13:56.115 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Project4] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/java.lang.Object.wait0(Native Method)
+ java.base/java.lang.Object.wait(Object.java:389)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:124)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:215)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+ java.base/java.lang.Thread.run(Thread.java:1447)
+29-Jul-2025 18:13:56.121 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:13:56.129 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:13:59.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.43
+29-Jul-2025 18:13:59.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 1 2025 21:30:20 UTC
+29-Jul-2025 18:13:59.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.43.0
+29-Jul-2025 18:13:59.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+29-Jul-2025 18:13:59.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            15.0
+29-Jul-2025 18:13:59.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+29-Jul-2025 18:13:59.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-24.jdk/Contents/Home
+29-Jul-2025 18:13:59.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.1+9-30
+29-Jul-2025 18:13:59.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+29-Jul-2025 18:13:59.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:13:59.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:13:59.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/conf/logging.properties
+29-Jul-2025 18:13:59.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+29-Jul-2025 18:13:59.705 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+29-Jul-2025 18:13:59.705 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+29-Jul-2025 18:13:59.705 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+29-Jul-2025 18:13:59.705 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+29-Jul-2025 18:13:59.705 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+29-Jul-2025 18:13:59.705 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+29-Jul-2025 18:13:59.705 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+29-Jul-2025 18:13:59.705 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+29-Jul-2025 18:13:59.705 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+29-Jul-2025 18:13:59.705 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+29-Jul-2025 18:13:59.705 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:13:59.705 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:13:59.706 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/temp
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/lib/tomcat-jni.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+29-Jul-2025 18:13:59.714 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/medhasubramaniyan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+29-Jul-2025 18:13:59.937 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:13:59.956 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [404] milliseconds
+29-Jul-2025 18:13:59.983 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+29-Jul-2025 18:13:59.983 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.43]
+29-Jul-2025 18:13:59.989 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/docs]
+29-Jul-2025 18:14:00.374 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:14:00.400 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/docs] has finished in [411] ms
+29-Jul-2025 18:14:00.401 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/manager]
+29-Jul-2025 18:14:00.569 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:14:00.575 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/manager] has finished in [175] ms
+29-Jul-2025 18:14:00.576 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/examples]
+29-Jul-2025 18:14:00.896 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:14:00.914 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/examples] has finished in [337] ms
+29-Jul-2025 18:14:00.914 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/ROOT]
+29-Jul-2025 18:14:01.108 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:14:01.111 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/ROOT] has finished in [197] ms
+29-Jul-2025 18:14:01.111 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/Project4]
+29-Jul-2025 18:14:01.668 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:14:01.676 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/Project4] has finished in [565] ms
+29-Jul-2025 18:14:01.676 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/host-manager]
+29-Jul-2025 18:14:01.900 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:14:01.902 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/host-manager] has finished in [226] ms
+29-Jul-2025 18:14:01.908 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:14:02.103 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2145] milliseconds
+29-Jul-2025 18:16:20.870 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+29-Jul-2025 18:16:20.872 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:16:20.881 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+29-Jul-2025 18:16:20.931 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Project4] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/java.lang.Object.wait0(Native Method)
+ java.base/java.lang.Object.wait(Object.java:389)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:124)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:215)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+ java.base/java.lang.Thread.run(Thread.java:1447)
+29-Jul-2025 18:16:20.941 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:16:20.958 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:16:24.646 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.43
+29-Jul-2025 18:16:24.649 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 1 2025 21:30:20 UTC
+29-Jul-2025 18:16:24.649 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.43.0
+29-Jul-2025 18:16:24.649 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+29-Jul-2025 18:16:24.649 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            15.0
+29-Jul-2025 18:16:24.650 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+29-Jul-2025 18:16:24.650 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-24.jdk/Contents/Home
+29-Jul-2025 18:16:24.650 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.1+9-30
+29-Jul-2025 18:16:24.650 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+29-Jul-2025 18:16:24.650 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:16:24.650 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:16:24.665 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/conf/logging.properties
+29-Jul-2025 18:16:24.665 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+29-Jul-2025 18:16:24.666 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+29-Jul-2025 18:16:24.666 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+29-Jul-2025 18:16:24.666 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+29-Jul-2025 18:16:24.666 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+29-Jul-2025 18:16:24.666 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+29-Jul-2025 18:16:24.666 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+29-Jul-2025 18:16:24.667 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+29-Jul-2025 18:16:24.667 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+29-Jul-2025 18:16:24.667 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+29-Jul-2025 18:16:24.667 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+29-Jul-2025 18:16:24.667 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:16:24.667 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:16:24.668 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/temp
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/lib/tomcat-jni.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+29-Jul-2025 18:16:24.680 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/medhasubramaniyan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+29-Jul-2025 18:16:24.937 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:16:24.961 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [675] milliseconds
+29-Jul-2025 18:16:24.996 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+29-Jul-2025 18:16:24.997 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.43]
+29-Jul-2025 18:16:25.004 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/docs]
+29-Jul-2025 18:16:25.912 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:16:25.953 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/docs] has finished in [947] ms
+29-Jul-2025 18:16:25.953 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/manager]
+29-Jul-2025 18:16:26.217 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:16:26.225 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/manager] has finished in [272] ms
+29-Jul-2025 18:16:26.225 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/examples]
+29-Jul-2025 18:16:26.643 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:16:26.666 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/examples] has finished in [440] ms
+29-Jul-2025 18:16:26.666 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/ROOT]
+29-Jul-2025 18:16:26.874 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:16:26.876 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/ROOT] has finished in [210] ms
+29-Jul-2025 18:16:26.876 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/Project4]
+29-Jul-2025 18:16:27.202 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:16:27.211 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/Project4] has finished in [334] ms
+29-Jul-2025 18:16:27.211 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/host-manager]
+29-Jul-2025 18:16:27.417 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:16:27.419 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/host-manager] has finished in [208] ms
+29-Jul-2025 18:16:27.423 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:16:27.439 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2476] milliseconds
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+29-Jul-2025 18:23:43.352 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+29-Jul-2025 18:23:43.358 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:23:43.368 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+29-Jul-2025 18:23:44.044 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Project4] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+29-Jul-2025 18:23:44.100 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Project4] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/java.lang.Object.wait0(Native Method)
+ java.base/java.lang.Object.wait(Object.java:389)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:124)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:215)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+ java.base/java.lang.Thread.run(Thread.java:1447)
+29-Jul-2025 18:23:45.608 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1400)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:987)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+		at java.base/java.lang.Thread.run(Thread.java:1447)
+29-Jul-2025 18:23:45.964 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:23:45.979 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:23:49.849 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.43
+29-Jul-2025 18:23:49.853 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 1 2025 21:30:20 UTC
+29-Jul-2025 18:23:49.854 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.43.0
+29-Jul-2025 18:23:49.854 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+29-Jul-2025 18:23:49.854 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            15.0
+29-Jul-2025 18:23:49.854 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+29-Jul-2025 18:23:49.854 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-24.jdk/Contents/Home
+29-Jul-2025 18:23:49.855 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.1+9-30
+29-Jul-2025 18:23:49.855 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+29-Jul-2025 18:23:49.855 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:23:49.855 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:23:49.892 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/conf/logging.properties
+29-Jul-2025 18:23:49.893 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+29-Jul-2025 18:23:49.894 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+29-Jul-2025 18:23:49.894 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+29-Jul-2025 18:23:49.894 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+29-Jul-2025 18:23:49.894 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+29-Jul-2025 18:23:49.894 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+29-Jul-2025 18:23:49.895 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+29-Jul-2025 18:23:49.895 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+29-Jul-2025 18:23:49.896 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+29-Jul-2025 18:23:49.896 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+29-Jul-2025 18:23:49.896 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+29-Jul-2025 18:23:49.897 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:23:49.897 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:23:49.897 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/temp
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/lib/tomcat-jni.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+29-Jul-2025 18:23:49.925 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/medhasubramaniyan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+29-Jul-2025 18:23:50.418 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:23:50.473 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1050] milliseconds
+29-Jul-2025 18:23:50.563 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+29-Jul-2025 18:23:50.564 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.43]
+29-Jul-2025 18:23:50.587 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/docs]
+29-Jul-2025 18:23:51.632 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:23:51.668 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/docs] has finished in [1,080] ms
+29-Jul-2025 18:23:51.668 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/manager]
+29-Jul-2025 18:23:51.857 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:23:51.863 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/manager] has finished in [195] ms
+29-Jul-2025 18:23:51.864 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/examples]
+29-Jul-2025 18:23:52.188 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:23:52.204 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/examples] has finished in [340] ms
+29-Jul-2025 18:23:52.204 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/ROOT]
+29-Jul-2025 18:23:52.398 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:23:52.399 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/ROOT] has finished in [195] ms
+29-Jul-2025 18:23:52.400 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/Project4]
+29-Jul-2025 18:23:52.631 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:23:52.637 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/Project4] has finished in [237] ms
+29-Jul-2025 18:23:52.638 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/host-manager]
+29-Jul-2025 18:23:52.776 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:23:52.778 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/host-manager] has finished in [141] ms
+29-Jul-2025 18:23:52.781 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:23:52.790 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2315] milliseconds
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+29-Jul-2025 18:24:33.147 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+29-Jul-2025 18:24:33.153 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:24:33.169 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+29-Jul-2025 18:24:33.222 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Project4] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+29-Jul-2025 18:24:33.223 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Project4] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/java.lang.Object.wait0(Native Method)
+ java.base/java.lang.Object.wait(Object.java:389)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:124)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:215)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+ java.base/java.lang.Thread.run(Thread.java:1447)
+29-Jul-2025 18:24:33.255 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:24:33.271 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:24:33.273 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1400)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:987)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:123)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:90)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+		at java.base/java.lang.Thread.run(Thread.java:1447)
+29-Jul-2025 18:24:40.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.43
+29-Jul-2025 18:24:40.400 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 1 2025 21:30:20 UTC
+29-Jul-2025 18:24:40.400 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.43.0
+29-Jul-2025 18:24:40.400 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+29-Jul-2025 18:24:40.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            15.0
+29-Jul-2025 18:24:40.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+29-Jul-2025 18:24:40.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-24.jdk/Contents/Home
+29-Jul-2025 18:24:40.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.1+9-30
+29-Jul-2025 18:24:40.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+29-Jul-2025 18:24:40.402 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:24:40.402 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:24:40.438 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/conf/logging.properties
+29-Jul-2025 18:24:40.439 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+29-Jul-2025 18:24:40.439 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+29-Jul-2025 18:24:40.439 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+29-Jul-2025 18:24:40.439 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+29-Jul-2025 18:24:40.440 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+29-Jul-2025 18:24:40.440 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+29-Jul-2025 18:24:40.441 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+29-Jul-2025 18:24:40.441 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+29-Jul-2025 18:24:40.441 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+29-Jul-2025 18:24:40.441 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+29-Jul-2025 18:24:40.441 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+29-Jul-2025 18:24:40.442 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:24:40.442 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:24:40.442 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/temp
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/lib/tomcat-jni.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+29-Jul-2025 18:24:40.472 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/medhasubramaniyan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+29-Jul-2025 18:24:40.921 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:24:40.955 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1041] milliseconds
+29-Jul-2025 18:24:40.995 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+29-Jul-2025 18:24:40.995 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.43]
+29-Jul-2025 18:24:41.007 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/docs]
+29-Jul-2025 18:24:42.179 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:24:42.217 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/docs] has finished in [1,210] ms
+29-Jul-2025 18:24:42.217 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/manager]
+29-Jul-2025 18:24:42.461 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:24:42.467 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/manager] has finished in [249] ms
+29-Jul-2025 18:24:42.467 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/examples]
+29-Jul-2025 18:24:43.125 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:24:43.177 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/examples] has finished in [709] ms
+29-Jul-2025 18:24:43.180 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/ROOT]
+29-Jul-2025 18:24:44.044 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:24:44.054 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/ROOT] has finished in [873] ms
+29-Jul-2025 18:24:44.055 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/Project4]
+29-Jul-2025 18:24:44.455 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:24:44.465 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/Project4] has finished in [409] ms
+29-Jul-2025 18:24:44.465 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/host-manager]
+29-Jul-2025 18:24:44.916 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:24:44.924 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/host-manager] has finished in [459] ms
+29-Jul-2025 18:24:44.939 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:24:45.106 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4149] milliseconds
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+29-Jul-2025 18:26:47.578 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+29-Jul-2025 18:26:47.610 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:26:47.627 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+29-Jul-2025 18:26:47.696 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Project4] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+29-Jul-2025 18:26:47.697 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Project4] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/java.lang.Object.wait0(Native Method)
+ java.base/java.lang.Object.wait(Object.java:389)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:124)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:215)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+ java.base/java.lang.Thread.run(Thread.java:1447)
+29-Jul-2025 18:26:47.710 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:26:47.725 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:26:51.118 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.43
+29-Jul-2025 18:26:51.123 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 1 2025 21:30:20 UTC
+29-Jul-2025 18:26:51.123 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.43.0
+29-Jul-2025 18:26:51.123 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+29-Jul-2025 18:26:51.123 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            15.0
+29-Jul-2025 18:26:51.123 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+29-Jul-2025 18:26:51.123 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-24.jdk/Contents/Home
+29-Jul-2025 18:26:51.123 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.1+9-30
+29-Jul-2025 18:26:51.123 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+29-Jul-2025 18:26:51.124 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:26:51.124 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:26:51.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/conf/logging.properties
+29-Jul-2025 18:26:51.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+29-Jul-2025 18:26:51.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+29-Jul-2025 18:26:51.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+29-Jul-2025 18:26:51.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+29-Jul-2025 18:26:51.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+29-Jul-2025 18:26:51.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+29-Jul-2025 18:26:51.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+29-Jul-2025 18:26:51.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+29-Jul-2025 18:26:51.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+29-Jul-2025 18:26:51.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+29-Jul-2025 18:26:51.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+29-Jul-2025 18:26:51.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:26:51.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:26:51.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/temp
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/lib/tomcat-jni.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+29-Jul-2025 18:26:51.147 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/medhasubramaniyan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+29-Jul-2025 18:26:51.540 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:26:51.575 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [634] milliseconds
+29-Jul-2025 18:26:51.613 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+29-Jul-2025 18:26:51.613 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.43]
+29-Jul-2025 18:26:51.621 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/docs]
+29-Jul-2025 18:26:52.192 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:26:52.250 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/docs] has finished in [628] ms
+29-Jul-2025 18:26:52.251 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/manager]
+29-Jul-2025 18:26:52.761 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:26:52.771 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/manager] has finished in [520] ms
+29-Jul-2025 18:26:52.771 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/examples]
+29-Jul-2025 18:26:53.402 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:26:53.424 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/examples] has finished in [652] ms
+29-Jul-2025 18:26:53.424 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/ROOT]
+29-Jul-2025 18:26:53.654 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:26:53.656 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/ROOT] has finished in [232] ms
+29-Jul-2025 18:26:53.656 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/Project4]
+29-Jul-2025 18:26:53.898 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:26:53.903 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/Project4] has finished in [246] ms
+29-Jul-2025 18:26:53.903 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/host-manager]
+29-Jul-2025 18:26:54.108 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:26:54.110 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/host-manager] has finished in [207] ms
+29-Jul-2025 18:26:54.113 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:26:54.121 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2544] milliseconds
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+29-Jul-2025 18:35:36.611 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+29-Jul-2025 18:35:36.614 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:35:36.620 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+29-Jul-2025 18:35:36.654 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Project4] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+29-Jul-2025 18:35:36.655 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Project4] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/java.lang.Object.wait0(Native Method)
+ java.base/java.lang.Object.wait(Object.java:389)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:124)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:215)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+ java.base/java.lang.Thread.run(Thread.java:1447)
+29-Jul-2025 18:35:36.662 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:35:36.677 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:35:41.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.43
+29-Jul-2025 18:35:41.832 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 1 2025 21:30:20 UTC
+29-Jul-2025 18:35:41.832 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.43.0
+29-Jul-2025 18:35:41.833 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+29-Jul-2025 18:35:41.833 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            15.0
+29-Jul-2025 18:35:41.833 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+29-Jul-2025 18:35:41.833 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-24.jdk/Contents/Home
+29-Jul-2025 18:35:41.834 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.1+9-30
+29-Jul-2025 18:35:41.834 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+29-Jul-2025 18:35:41.835 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:35:41.835 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:35:41.863 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/conf/logging.properties
+29-Jul-2025 18:35:41.863 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+29-Jul-2025 18:35:41.863 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+29-Jul-2025 18:35:41.864 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+29-Jul-2025 18:35:41.864 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+29-Jul-2025 18:35:41.865 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+29-Jul-2025 18:35:41.865 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+29-Jul-2025 18:35:41.865 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+29-Jul-2025 18:35:41.865 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+29-Jul-2025 18:35:41.866 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+29-Jul-2025 18:35:41.866 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+29-Jul-2025 18:35:41.866 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+29-Jul-2025 18:35:41.867 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:35:41.867 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43
+29-Jul-2025 18:35:41.868 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/temp
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/lib/tomcat-jni.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+29-Jul-2025 18:35:41.900 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/medhasubramaniyan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+29-Jul-2025 18:35:42.793 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:35:42.835 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1583] milliseconds
+29-Jul-2025 18:35:42.886 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+29-Jul-2025 18:35:42.886 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.43]
+29-Jul-2025 18:35:42.896 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/docs]
+29-Jul-2025 18:35:43.493 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:35:43.536 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/docs] has finished in [640] ms
+29-Jul-2025 18:35:43.536 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/manager]
+29-Jul-2025 18:35:43.935 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:35:43.942 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/manager] has finished in [406] ms
+29-Jul-2025 18:35:43.943 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/examples]
+29-Jul-2025 18:35:44.619 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:35:44.643 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/examples] has finished in [700] ms
+29-Jul-2025 18:35:44.643 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/ROOT]
+29-Jul-2025 18:35:45.048 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:35:45.049 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/ROOT] has finished in [406] ms
+29-Jul-2025 18:35:45.049 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/Project4]
+29-Jul-2025 18:35:45.329 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:35:45.333 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/Project4] has finished in [284] ms
+29-Jul-2025 18:35:45.333 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/host-manager]
+29-Jul-2025 18:35:45.513 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Jul-2025 18:35:45.515 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/medhasubramaniyan/Desktop/PROJECT4CNT/PROJ4CNT/apache-tomcat-10.1.43/webapps/host-manager] has finished in [181] ms
+29-Jul-2025 18:35:45.517 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+29-Jul-2025 18:35:45.526 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2689] milliseconds
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.

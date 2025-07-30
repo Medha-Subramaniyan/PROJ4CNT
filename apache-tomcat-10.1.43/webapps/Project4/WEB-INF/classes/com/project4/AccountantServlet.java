@@ -1,13 +1,9 @@
 /*
- * Project 4 - CNT 4714
- * AccountantServlet.java
- * 
- * This servlet handles accountant-level stored procedure execution.
- * The accountant user has EXECUTE privileges on the project4 database.
- * 
- * Author: [Your Name]
- * Course: CNT 4714
- * Date: [Current Date]
+ * Name: Medha Subramaniyan
+ * Course: CNT 4714 – Summer 2025 – Project Four
+ * Assignment title: A Three-Tier Distributed Web-Based Application
+ * Date: July 31, 2025
+ * Class: AccountantServlet
  */
 
 package com.project4;
@@ -26,18 +22,9 @@ public class AccountantServlet extends HttpServlet {
         String procedureOption = request.getParameter("procedureOption");
         
         try {
-            // Load accountant properties for project4 connection
-            Properties props = new Properties();
-            props.load(getServletContext().getResourceAsStream("/WEB-INF/conf/accountant.properties"));
-            
-            // Load JDBC driver
-            Class.forName(props.getProperty("driver"));
-            
-            // Connect to project4 as accountant
-            try (Connection conn = DriverManager.getConnection(
-                    props.getProperty("url"),
-                    props.getProperty("user"),
-                    props.getProperty("password"))) {
+            // Connect to project4 as accountant using DBConnectionUtil
+            try (Connection conn = DBConnectionUtil.getConnection(
+                    getServletContext(), "/WEB-INF/conf/accountant.properties")) {
                 
                 // Execute stored procedure based on selection
                 String procedureName = getProcedureName(procedureOption);
@@ -75,7 +62,7 @@ public class AccountantServlet extends HttpServlet {
                         }
                     }
                 } else {
-                    request.setAttribute("error", "Invalid stored procedure selection.");
+                    request.setAttribute("error", "Invalid procedure selection.");
                 }
                 
             }
@@ -93,18 +80,12 @@ public class AccountantServlet extends HttpServlet {
     
     private String getProcedureName(String option) {
         switch (option) {
-            case "1":
-                return "Get_The_Sum_Of_All_Parts_Weights";
-            case "2":
-                return "Get_The_Maximum_Status_Of_All_Suppliers";
-            case "3":
-                return "Get_The_Total_Number_Of_Shipments";
-            case "4":
-                return "Get_The_Name_Of_The_Job_With_The_Most_Workers";
-            case "5":
-                return "List_The_Name_And_Status_Of_All_Suppliers";
-            default:
-                return null;
+            case "1": return "Get_The_Sum_Of_All_Parts_Weights";
+            case "2": return "Get_The_Maximum_Status_Of_All_Suppliers";
+            case "3": return "Get_The_Total_Number_Of_Shipments";
+            case "4": return "Get_The_Name_Of_The_Job_With_The_Most_Workers";
+            case "5": return "List_The_Name_And_Status_Of_All_Suppliers";
+            default: return null;
         }
     }
     

@@ -1,14 +1,9 @@
 /*
- * Project 4 - CNT 4714
- * ClientServlet.java
- * 
- * This servlet handles client-level SQL commands. The client user
- * has SELECT privileges only on the project4 database and cannot
- * trigger business logic.
- * 
- * Author: [Your Name]
- * Course: CNT 4714
- * Date: [Current Date]
+ * Name: Medha Subramaniyan
+ * Course: CNT 4714 – Summer 2025 – Project Four
+ * Assignment title: A Three-Tier Distributed Web-Based Application
+ * Date: July 31, 2025
+ * Class: ClientServlet
  */
 
 package com.project4;
@@ -27,18 +22,9 @@ public class ClientServlet extends HttpServlet {
         String sqlCommand = request.getParameter("sqlCommand");
         
         try {
-            // Load client properties for project4 connection
-            Properties props = new Properties();
-            props.load(getServletContext().getResourceAsStream("/WEB-INF/conf/client.properties"));
-            
-            // Load JDBC driver
-            Class.forName(props.getProperty("driver"));
-            
-            // Connect to project4 as client
-            try (Connection conn = DriverManager.getConnection(
-                    props.getProperty("url"),
-                    props.getProperty("user"),
-                    props.getProperty("password"))) {
+            // Connect to project4 as client using DBConnectionUtil
+            try (Connection conn = DBConnectionUtil.getConnection(
+                    getServletContext(), "/WEB-INF/conf/client.properties")) {
                 
                 // Execute SQL command
                 try (Statement stmt = conn.createStatement()) {
@@ -94,6 +80,9 @@ public class ClientServlet extends HttpServlet {
         } catch (Exception e) {
             request.setAttribute("error", "Error: " + e.getMessage());
         }
+        
+        // Set the SQL command back in the request for the JSP to display
+        request.setAttribute("sqlCommand", sqlCommand);
         
         // Forward back to client home page
         RequestDispatcher dispatcher = request.getRequestDispatcher("clientHome.jsp");

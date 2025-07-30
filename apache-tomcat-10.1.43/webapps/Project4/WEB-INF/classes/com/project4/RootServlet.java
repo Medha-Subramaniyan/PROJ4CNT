@@ -1,14 +1,9 @@
 /*
- * Project 4 - CNT 4714
- * RootServlet.java
- * 
- * This servlet handles root-level SQL commands. The root user has
- * full privileges on the project4 database and can trigger business
- * logic when shipment quantities >= 100.
- * 
- * Author: [Your Name]
- * Course: CNT 4714
- * Date: [Current Date]
+ * Name: Medha Subramaniyan
+ * Course: CNT 4714 – Summer 2025 – Project Four
+ * Assignment title: A Three-Tier Distributed Web-Based Application
+ * Date: July 31, 2025
+ * Class: RootServlet
  */
 
 package com.project4;
@@ -28,18 +23,9 @@ public class RootServlet extends HttpServlet {
         boolean businessLogicTriggered = false;
         
         try {
-            // Load root properties for project4 connection
-            Properties props = new Properties();
-            props.load(getServletContext().getResourceAsStream("/WEB-INF/conf/root.properties"));
-            
-            // Load JDBC driver
-            Class.forName(props.getProperty("driver"));
-            
-            // Connect to project4 as root
-            try (Connection conn = DriverManager.getConnection(
-                    props.getProperty("url"),
-                    props.getProperty("user"),
-                    props.getProperty("password"))) {
+            // Connect to project4 as root using DBConnectionUtil
+            try (Connection conn = DBConnectionUtil.getConnection(
+                    getServletContext(), "/WEB-INF/conf/root.properties")) {
                 
                 // Execute SQL command
                 try (Statement stmt = conn.createStatement()) {
@@ -75,32 +61,25 @@ public class RootServlet extends HttpServlet {
                             
                             request.setAttribute("results", resultHtml.toString());
                         }
-                    } else if (trimmedSQL.startsWith("insert") || trimmedSQL.startsWith("update")) {
-                        // Handle INSERT/UPDATE statements
+                    } else {
+                        // Handle UPDATE, INSERT, DELETE statements
                         int rowsAffected = stmt.executeUpdate(sqlCommand);
                         
-                        // Check if business logic should be triggered
-                        if (trimmedSQL.contains("shipments") && 
-                            (trimmedSQL.contains("quantity") || trimmedSQL.contains("insert"))) {
-                            
-                            // Check if any shipments have quantity >= 100
-                            String checkSQL = "SELECT COUNT(*) FROM shipments WHERE quantity >= 100";
-                            try (ResultSet rs = stmt.executeQuery(checkSQL)) {
+                        // Check if this is an UPDATE on shipments table
+                        if (trimmedSQL.startsWith("update") && trimmedSQL.contains("shipments")) {
+                            // Check if any shipment quantity >= 100
+                            try (ResultSet rs = stmt.executeQuery("SELECT COUNT(*) FROM shipments WHERE quantity >= 100")) {
                                 if (rs.next() && rs.getInt(1) > 0) {
-                                    // Trigger business logic
-                                    String updateSQL = "UPDATE suppliers SET status = status + 5 " +
-                                                     "WHERE snum IN (SELECT DISTINCT snum FROM shipments WHERE quantity >= 100)";
-                                    stmt.executeUpdate(updateSQL);
                                     businessLogicTriggered = true;
                                 }
                             }
                         }
                         
-                        request.setAttribute("results", "Command executed successfully. Rows affected: " + rowsAffected);
-                    } else {
-                        // Handle other statements (DELETE, etc.)
-                        int rowsAffected = stmt.executeUpdate(sqlCommand);
-                        request.setAttribute("results", "Command executed successfully. Rows affected: " + rowsAffected);
+                        String message = rowsAffected + " row(s) affected.";
+                        if (businessLogicTriggered) {
+                            message += " Business logic triggered: Shipment quantities >= 100 detected!";
+                        }
+                        request.setAttribute("results", "<p>" + message + "</p>");
                     }
                 }
                 
@@ -112,8 +91,8 @@ public class RootServlet extends HttpServlet {
             request.setAttribute("error", "Error: " + e.getMessage());
         }
         
-        // Set business logic flag
-        request.setAttribute("businessLogicTriggered", businessLogicTriggered);
+        // Set the SQL command back in the request for the JSP to display
+        request.setAttribute("sqlCommand", sqlCommand);
         
         // Forward back to root home page
         RequestDispatcher dispatcher = request.getRequestDispatcher("rootHome.jsp");
